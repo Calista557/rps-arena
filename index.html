@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock-paper-scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="start-screen">
+   <h1>Welcome, Challenger!</h1>
+
+  <p class="welcomeText">
+     Challenge yourself in the classic Rock Paper Scissors showdown and be the first to reach 5 points!
+  </p>
+
+  <form id="nameForm">
+    <input
+      id="playerName"
+      type="text"
+      placeholder="Type your name here"
+      required
+    >
+
+    <button type="submit">Start Playing</button>
+  </form>
+
+  <div class="rules">
+    <h2>Rules</h2>
+    <p>Rock beats Scissors</p>
+    <p>Scissors beats Paper</p>
+    <p>Paper beats Rock</p>
+    <p>First to 5 points wins</p>
+  </div>
+</section>
+
+
+
+    <!-- <header class="navbar">
+<div class="logo">RPS</div>
+        <button class="rules-btn">Rules</button>
+    </header> -->
+    <!-- <header class="navbar">
+  <div class="logo">RPS</div>
+</header> -->
+<div class="game-screen">
+ <!-- <h1>ROCK PAPER SCISSORS</h1> -->
+<h1>Calista's RPS Arena</h1>
+<p class="introText">Choose your move wisely and be the first to score 5 points against the computer!</p>
+
+    <!-- <section class="scoreboard">
+   <main class="game">
+    <h2>Scoreboard</h2> 
+    <p class="gameRule">First to 5 wins!</p>
+    <p class="currentScore">You: 0 vs Computer: 0</p>
+        </section> -->
+<section class="scoreboard">
+    <h2>Scoreboard</h2>
+    <p class="gameRule">First to 5 wins!</p>
+<p class="currentScore" id="scoreDisplay">
+  Player: 0 vs Computer: 0
+</p>
+    </section>
+
+<section class="choices">
+    <button class="choice-btn" id="rock">
+        <img src="images/oncoming-fist-skin-5-svgrepo-com.svg" alt="">
+    </button>
+    <button class="choice-btn" id="paper">
+        <img src="images/hand-svgrepo-com.svg" alt="">
+    </button>
+    <button class="choice-btn" id="scissors">
+        <img src="images/scissors.svg" alt="">
+    </button>
+</section>
+
+    <section class="result">
+        <p >Choose Your Move To Start The Game!</p>
+         <button id="reset">RESET!</button>
+    </section>
+</div>
+
+<footer class="footer" id="footer">
+  <p>&copy; 2026 Nwanne Calista. All rights reserved.</p>
+</footer>
+   
+<!-- </main> -->
+
+
+    <script src="script.js"></script>
+</body>
+</html>
