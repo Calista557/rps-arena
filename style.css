@@ -22,9 +22,9 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  padding: 20px 16px 10px;
+  padding: 12px 12px 8px;
 }
 
 main {
@@ -37,7 +37,7 @@ main {
   width: 100%;
   max-width: 520px;
   background: #fff8f2;
-  padding: 44px 32px;
+  padding: 56px 32px 48px;
   border-radius: 24px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
   text-align: center;
@@ -133,7 +133,7 @@ main {
   max-width: 520px;
   background: #fff8f2;
   border-radius: 24px;
-  padding: 44px 32px;
+  padding: 56px 32px 48px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
   text-align: center;
 }
@@ -159,8 +159,8 @@ main {
   background: linear-gradient(135deg, #fff3eb, #f7dfcf);
   border: 2px solid #ecd0bf;
   border-radius: 20px;
-  padding: 28px 22px;
-  margin-bottom: 28px;
+  padding: 32px 22px;
+  margin-bottom: 32px;
 }
 
 .scoreboard h2 {
@@ -272,12 +272,12 @@ main {
 ========================= */
 @media (max-width: 480px) {
   body {
-    padding: 16px 12px 8px;
+    padding: 10px 10px 6px;
   }
 
   .start-screen,
   .game-screen {
-    padding: 26px 20px;
+    padding: 32px 20px 28px;
     border-radius: 22px;
   }
 
