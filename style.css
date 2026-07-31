@@ -9,6 +9,7 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+
 body {
    min-height: 100vh;
   font-family: "Poppins", sans-serif;
@@ -228,7 +229,7 @@ margin: 10px auto;
   margin-top: 0;
   padding: 15px 0;
 }
-
+/* 
 @media (max-width: 768px) {
   .game-screen,
   .start-screen{
@@ -257,6 +258,7 @@ margin: 10px auto;
     gap: 12px;
   }
   .footer{
+
     margin: 10px 0;
     padding: 10px;
     text-align: center;
@@ -267,4 +269,4 @@ margin: 10px auto;
     font-size: 2rem;
   }
 
-}
+} */
