@@ -22,14 +22,17 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 20px 16px 10px;
 }
 
 main {
+  flex: 1;
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .start-screen {
@@ -262,8 +265,7 @@ main {
   text-align: center;
   color: #5d3a2a;
   font-size: 0.9rem;
-  margin-top: 16px;
-  padding-bottom: 8px;
+
 }
 
 /* =========================
