@@ -28,18 +28,16 @@ body {
 }
 
 main {
-  flex: 1;
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .start-screen {
   width: 100%;
-  max-width: 430px;
+  max-width: 520px;
   background: #fff8f2;
-  padding: 32px 24px;
+  padding: 44px 32px;
   border-radius: 24px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
   text-align: center;
@@ -47,17 +45,17 @@ main {
 }
 
 .start-screen h1 {
-  font-size: 2.2rem;
+  font-size: 2.8rem;
   color: #7a3f1d;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   line-height: 1.2;
 }
 
 .welcomeText {
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.7;
   color: #6d4c41;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 /* =========================
@@ -132,26 +130,26 @@ main {
 .game-screen {
   display: none;
   width: 100%;
-  max-width: 430px;
+  max-width: 520px;
   background: #fff8f2;
   border-radius: 24px;
-  padding: 32px 24px;
+  padding: 44px 32px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
   text-align: center;
 }
 
 .game-screen h1 {
-  font-size: 2.3rem;
+  font-size: 2.8rem;
   color: #7a3f1d;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   line-height: 1.2;
 }
 
 .introText {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.1rem;
+  line-height: 1.7;
   color: #6d4c41;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 /* =========================
@@ -161,12 +159,12 @@ main {
   background: linear-gradient(135deg, #fff3eb, #f7dfcf);
   border: 2px solid #ecd0bf;
   border-radius: 20px;
-  padding: 22px 18px;
-  margin-bottom: 24px;
+  padding: 28px 22px;
+  margin-bottom: 28px;
 }
 
 .scoreboard h2 {
-  font-size: 1.7rem;
+  font-size: 2rem;
   color: #7a3f1d;
   margin-bottom: 8px;
 }
@@ -178,7 +176,7 @@ main {
 }
 
 .currentScore {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: #4a2f21;
   line-height: 1.4;
@@ -191,14 +189,14 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 20px;
   flex-wrap: nowrap;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 .choice-btn {
-  width: 110px;
-  height: 110px;
+  width: 128px;
+  height: 128px;
   border: none;
   border-radius: 22px;
   background: linear-gradient(145deg, #fffaf6, #efd9ca);
@@ -216,8 +214,8 @@ main {
 }
 
 .choice-btn img {
-  width: 56px;
-  height: 56px;
+  width: 64px;
+  height: 64px;
 }
 
 /* =========================
@@ -265,7 +263,8 @@ main {
   text-align: center;
   color: #5d3a2a;
   font-size: 0.9rem;
-
+  margin-top: 16px;
+  padding-bottom: 8px;
 }
 
 /* =========================
@@ -278,19 +277,19 @@ main {
 
   .start-screen,
   .game-screen {
-    padding: 18px;
+    padding: 26px 20px;
     border-radius: 22px;
   }
 
   .start-screen h1,
   .game-screen h1 {
-    font-size: 1.9rem;
+    font-size: 2.2rem;
   }
 
   .welcomeText,
   .introText {
-    font-size: 0.92rem;
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.6;
   }
 
   .rules {
@@ -306,34 +305,34 @@ main {
   }
 
   .scoreboard {
-    padding: 18px 14px;
+    padding: 22px 16px;
   }
 
   .scoreboard h2 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
   .gameRule {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
   .currentScore {
-    font-size: 1rem;
+    font-size: 1.15rem;
   }
 
   .choices {
-    gap: 12px;
+    gap: 14px;
   }
 
   .choice-btn {
-    width: 86px;
-    height: 86px;
+    width: 100px;
+    height: 100px;
     border-radius: 18px;
   }
 
   .choice-btn img {
-    width: 44px;
-    height: 44px;
+    width: 50px;
+    height: 50px;
   }
 
   .result {
