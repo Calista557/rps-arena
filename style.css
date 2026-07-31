@@ -1,55 +1,71 @@
-/* RESET */
+/* =========================
+   RESET
+========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background: linear-gradient(135deg, #f8e6d7 0%, #f5d6bc 45%, #e9c4b0 100%);
   color: #4a2f21;
+
+  /* This removes desktop scrolling */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 16px;
 }
 
-/* START SCREEN */
+/* =========================
+   START SCREEN
+========================= */
 .start-screen {
   width: 100%;
-  max-width: 550px;
+  max-width: 500px;
   background: #fff8f2;
-  padding: 35px 25px;
+  padding: 28px 22px;
   border-radius: 24px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
   text-align: center;
-  margin-bottom: 30px;
 }
 
 .start-screen h1 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: #7a3f1d;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .welcomeText {
-  font-size: 1rem;
-  line-height: 1.7;
+  font-size: 0.95rem;
+  line-height: 1.6;
   color: #6d4c41;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
-/* FORM */
+/* =========================
+   FORM
+========================= */
 #nameForm {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  margin-bottom: 25px;
+  gap: 14px;
+  margin-bottom: 22px;
 }
 
 #playerName {
+  width: 100%;
   padding: 14px 16px;
   border: 2px solid #d9b8a3;
   border-radius: 12px;
@@ -64,6 +80,7 @@ body {
 }
 
 #nameForm button {
+  width: 100%;
   padding: 14px;
   border: none;
   border-radius: 12px;
@@ -80,122 +97,130 @@ body {
   transform: translateY(-2px);
 }
 
-/* RULES */
+/* =========================
+   RULES
+========================= */
 .rules {
   background: #f4dfd0;
   border-radius: 16px;
-  padding: 20px;
+  padding: 18px;
   text-align: left;
 }
 
 .rules h2 {
   text-align: center;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   color: #7a3f1d;
 }
 
 .rules p {
-  margin-bottom: 8px;
-  font-size: 0.95rem;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
 }
 
-/* GAME SCREEN */
+/* =========================
+   GAME SCREEN
+========================= */
 .game-screen {
   display: none;
   width: 100%;
-  max-width: 800px;
+  max-width: 620px;
   background: #fff8f2;
-  border-radius: 28px;
-  padding: 35px 25px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  border-radius: 24px;
+  padding: 26px 22px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
   text-align: center;
 }
 
 .game-screen h1 {
-  font-size: 2.3rem;
+  font-size: 2rem;
   color: #7a3f1d;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .introText {
-  font-size: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
   color: #6d4c41;
-  line-height: 1.6;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
-/* SCOREBOARD */
+/* =========================
+   SCOREBOARD
+========================= */
 .scoreboard {
   background: linear-gradient(135deg, #fff3eb, #f7dfcf);
-  border-radius: 20px;
-  padding: 25px 20px;
-  margin-bottom: 30px;
   border: 2px solid #ecd0bf;
+  border-radius: 18px;
+  padding: 18px 16px;
+  margin-bottom: 22px;
 }
 
 .scoreboard h2 {
+  font-size: 1.5rem;
   color: #7a3f1d;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .gameRule {
   color: #8a5a44;
-  font-weight: 500;
-  margin-bottom: 12px;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
 }
 
 .currentScore {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  color: #4a2f21;
 }
 
-/* CHOICES */
+/* =========================
+   CHOICES
+========================= */
 .choices {
   display: flex;
   justify-content: center;
-  gap: 22px;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
+  gap: 18px;
+  margin-bottom: 22px;
 }
 
 .choice-btn {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   border: none;
-  border-radius: 24px;
+  border-radius: 22px;
   background: linear-gradient(145deg, #fffaf6, #efd9ca);
-  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   transition: all 0.25s ease;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
 }
 
 .choice-btn:hover {
-  transform: translateY(-6px) scale(1.05);
-  background: linear-gradient(145deg, #fdf1e8, #e8c8b3);
+  transform: translateY(-4px) scale(1.04);
 }
 
 .choice-btn img {
-  width: 60px;
-  height: 60px;
+  width: 52px;
+  height: 52px;
 }
 
-/* RESULT */
+/* =========================
+   RESULT
+========================= */
 .result {
   background: #f7e5d9;
-  border-radius: 18px;
-  padding: 25px 20px;
+  border-radius: 16px;
+  padding: 18px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 18px;
+  gap: 14px;
 }
 
 .result p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #5d3a2a;
 }
@@ -217,112 +242,22 @@ body {
   transform: translateY(-2px);
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 .footer {
-  margin-top: 25px;
+  margin-top: 12px;
   text-align: center;
   color: #5d3a2a;
-  font-size: 0.9rem;
-  padding-bottom: 10px;
+  font-size: 0.85rem;
 }
 
-/* MOBILE */
+/* =========================
+   MOBILE ONLY
+========================= */
 @media (max-width: 600px) {
   body {
-    padding: 14px;
-  }
-
-  .start-screen,
-  .game-screen {
-    padding: 25px 18px;
-    border-radius: 20px;
-  }
-
-  .start-screen h1,
-  .game-screen h1 {
-    font-size: 1.8rem;
-  }
-
-  .welcomeText,
-  .introText {
-    font-size: 0.95rem;
-  }
-
-  .choice-btn {
-    width: 95px;
-    height: 95px;
-  }
-
-  .choice-btn img {
-    width: 48px;
-    height: 48px;
-  }
-
-  .currentScore {
-    font-size: 1rem;
-  }
-
-  .result p {
-    font-size: 1rem;
-  }
-}
-
-
-/* =========================
-   TABLET (768px and below)
-========================= */
-@media (max-width: 768px) {
-  body {
-    padding: 16px;
-  }
-
-  .start-screen,
-  .game-screen {
-    width: 100%;
-    padding: 28px 20px;
-    border-radius: 20px;
-  }
-
-  .start-screen h1,
-  .game-screen h1 {
-    font-size: 2rem;
-  }
-
-  .welcomeText,
-  .introText {
-    font-size: 0.95rem;
-    line-height: 1.6;
-  }
-
-  .scoreboard {
-    padding: 20px 16px;
-  }
-
-  .currentScore {
-    font-size: 1.05rem;
-  }
-
-  .choices {
-    gap: 16px;
-  }
-
-  .choice-btn {
-    width: 100px;
-    height: 100px;
-  }
-
-  .choice-btn img {
-    width: 50px;
-    height: 50px;
-  }
-}
-
-
-/* =========================
-   MOBILE (480px and below)
-========================= */
-@media (max-width: 480px) {
-  body {
+    justify-content: flex-start;
     padding: 12px;
   }
 
@@ -334,46 +269,12 @@ body {
 
   .start-screen h1,
   .game-screen h1 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   .welcomeText,
   .introText {
-    font-size: 0.9rem;
-  }
-
-  #nameForm {
-    gap: 12px;
-  }
-
-  #playerName {
-    width: 100%;
-    font-size: 0.95rem;
-  }
-
-  #nameForm button {
-    width: 100%;
-  }
-
-  .rules {
-    padding: 16px;
-  }
-
-  .rules p {
-    font-size: 0.9rem;
-  }
-
-  .scoreboard h2 {
-    font-size: 1.3rem;
-  }
-
-  .gameRule {
-    font-size: 0.9rem;
-  }
-
-  .currentScore {
-    font-size: 0.95rem;
-    line-height: 1.5;
+    font-size: 0.92rem;
   }
 
   .choices {
@@ -381,18 +282,13 @@ body {
   }
 
   .choice-btn {
-    width: 82px;
-    height: 82px;
-    border-radius: 18px;
+    width: 84px;
+    height: 84px;
   }
 
   .choice-btn img {
-    width: 42px;
-    height: 42px;
-  }
-
-  .result {
-    padding: 18px 14px;
+    width: 44px;
+    height: 44px;
   }
 
   .result p {
@@ -405,23 +301,7 @@ body {
   }
 
   .footer {
-    font-size: 0.8rem;
-    margin-top: 18px;
-  }
-}
-
-
-/* =========================
-   VERY SMALL PHONES
-========================= */
-@media (max-width: 360px) {
-  .choices {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .choice-btn {
-    width: 90px;
-    height: 90px;
+    margin-top: 16px;
+    padding-bottom: 8px;
   }
 }
