@@ -74,6 +74,14 @@ margin: 10px auto;
   border-color: #b5653b;
   box-shadow: 0 0 0 4px rgba(181, 101, 59, 0.15);
 }
+.player-name {
+  color: #7a3f1d;;
+  font-weight: 700;
+}
+.computer-name {
+  color: #7a3f1d;
+  font-weight: 700;
+}
 #nameForm button {
   
   padding: 14px;
@@ -188,6 +196,16 @@ margin: 10px auto;
   transform: translateY(-5px) scale(1.05);
   background: linear-gradient(145deg, #fdf1e8, #e8c8b3);
 }
+.choice-btn:disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+.choice-btn:disabled:hover{
+  transform: none;
+  background: linear-gradient(145deg, #fffaf6);
+}
 .result {
   background: #f7e5d9;
   border-radius: 18px;
@@ -220,6 +238,13 @@ margin: 10px auto;
 #reset:hover {
   background: #6f3417;
   transform: translateY(-2px);
+}
+
+#reset:disabled {
+  background: #c7b5aa;
+  cursor: not-allowed;
+  opacity: 0.6;
+  transform: none;
 }
 .footer {
   width: 100%;

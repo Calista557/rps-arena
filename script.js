@@ -12,6 +12,8 @@ const result = document.querySelector(".result p");
 const resetBtn = document.querySelector("#reset");
 const footer = document.querySelector("#footer");
 
+resetBtn.disabled = true;
+
 let playerName = "";
 let humanScore = 0;
 let computerScore = 0;
@@ -29,6 +31,8 @@ nameForm.addEventListener("submit", function (e) {
   startScreen.style.display = "none";
   gameScreen.style.display = "block";
   footer.style.display = "block";
+
+  result.innerText = `Welcome ${playerName}! Choose Your Move To Start The Game.`;
 
   updateScore();
 });
@@ -87,6 +91,9 @@ function endGame() {
   rockBtn.disabled = true;
   paperBtn.disabled = true;
   scissorsBtn.disabled = true;
+
+  resetBtn.disabled = false;
+
 }
 
 function resetResult() {
@@ -98,7 +105,7 @@ function resetResult() {
   rockBtn.disabled = false;
   paperBtn.disabled = false;
   scissorsBtn.disabled = false;
-
+  resetBtn.disabled = true;
   result.innerText = "Choose Your Move To Start The Game!";
 
   // console.log("Player:", humanScore);
@@ -125,6 +132,13 @@ scissorsBtn.addEventListener("click", function () {
   // result.innerText = `You Chose SCISSORS, Computer Chose ${computerChoice.toUpperCase()}`;
 });
 
+
+result.innerText = `Welcome ${playerName}! Choose Your Move To Start The Game.`;
+
 function updateScore() {
-  scoreDisplay.innerText = `${playerName}: ${humanScore} vs Computer: ${computerScore}`;
+  scoreDisplay.innerHTML = `
+    <span class="player-name">${playerName}</span>: ${humanScore}
+    vs
+    <span class="computer-name">Computer</span>: ${computerScore}
+  `;
 }
